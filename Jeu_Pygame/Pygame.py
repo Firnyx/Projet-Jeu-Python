@@ -4,12 +4,12 @@ import math
 
 
 
-def score_éliminations():
+def score_éliminations():                   # créé l'image qui montre le score lorsque le jeu est actif
     score = texte.render(f'Score: {enmi_tués}',False, "Black")
     score_rect = score.get_rect( center = (150,60))
     screen.blit(score, score_rect)
 
-def score_temps():
+def score_temps():                         # détermine le temps de jeu
     temps = int(pygame.time.get_ticks() / 1000) - temps_global
     return temps
 
@@ -31,13 +31,13 @@ def mouvement_projectile(liste_projectile):
 
     else : return []
 
-def collisions_gameOver(perso, projectiles):
+def collisions_gameOver(perso, projectiles):                # lorsque les rectangles de l'éclair et du personnage se touchent, la variable jeu_actif est alors égale à False, stoppant le jeu
     if projectiles:
         for projectile_rect in projectiles:
             if perso.colliderect(projectile_rect): return False
     return True
 
-def collisions_Joueur_Proj(joueur, projectiles):
+def collisions_Joueur_Proj(joueur, projectiles):            # lorsque les rectangles de la sphère-joueur et d'un éclair-projectile se touchent, le rectangle de l'éclair est retiré de la liste, et donc disparaît
     if projectiles:
         for projectile_rect in projectiles:
             if joueur.colliderect(projectile_rect):
@@ -45,7 +45,7 @@ def collisions_Joueur_Proj(joueur, projectiles):
                 global enmi_tués
                 enmi_tués += 1
 
-def perso_animation():
+def perso_animation():                                      # lorsque la variable indicateur_chgmt_image est égale à 1, 2, 3 et 4 le personnage change d'image; je la fais monter jusqu'à 28 pour créer un délais entre chaque animation
     global index_perso, indicateur_chgmt_image, surf_perso
     indicateur_chgmt_image += 0.1
     index_perso = indicateur_chgmt_image
