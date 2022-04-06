@@ -22,4 +22,5 @@ Tout d'abord, un cercle trigonométrique (l.113 à l.118) a été utilisé pour 
 
 Ces positions sont  ensuite attribuées à un rectangle (image éclair) qui est stockée dans une liste
 Cette liste contient tous les rectangles éclairs (nommés 'ennemi' dans le code), avec l'information de leur position. Elle  va s'auto référer (l.148) à l'aide d'une fonction, pour créer une boucle.
-La fonction mouvement_projectile
+La fonction mouvement_projectile (l.16) permet de calculer le déplacement des rectangles avec des vecteurs :
+
