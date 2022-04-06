@@ -22,7 +22,7 @@ Tout d'abord, un cercle trigonométrique (l.113 à l.118) a été utilisé pour 
 - theta_rad convertit la variable précédente en radiant, car python calcule le cos et le sin dans cette unité
 - ainsi on calcule des positions x et y avec ces valeurs (l.117 et 118), on ajoute 420 à x et 341 à y pour que le cercle virtuel soit centré sur le             personnage, on obtient donc des positions (arrondies) avec l'aide du cosinus et du sinus
 
-Ces positions sont  ensuite attribuées à un rectangle (image éclair) qui est stocké dans une liste
+Ces positions sont  ensuite attribuées à un rectangle (image éclair) qui est stocké dans une liste.
 Cette liste contient tous les rectangles éclairs (nommés 'ennemi' dans le code), avec l'information de leur position. Elle  va s'auto référer (l.148) à l'aide d'une fonction, pour créer une boucle.
 
 La fonction mouvement_projectile (l.16) permet de calculer le déplacement des rectangles avec des vecteurs :
