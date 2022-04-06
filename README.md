@@ -31,7 +31,7 @@ La fonction mouvement_projectile (l.16) permet de calculer le déplacement des r
 - norme_ProjectPerso comme son nom l'indique calcule la longueur qui sépare ces deux points 
 - Or si l'on en restait là les éclairs se téléporteraient directement sur le centre, pour éviter cela on utilise la variable Vect_projectile qui divise le vecteur par sa norme, ainsi on obtient un déplacement de 1, dans la bonne direction et le bon sens
 - on assimile ainsi les nouvelles coordonnées calculées au rectangle avec ces variables : projectile_rect.x (l.24) et projectile_rect.y (l.25)
-- J'ai utilisé la fonction round() pour que les coordonnées soit arrondies selon les règles mathématiques, c'est à dire que si la partie décimale est égale ou  supérieure à 0.5 on arrondie au-dessus, ce que ne fait pas la fonction int()
+- J'ai utilisé la fonction round() pour que les coordonnées soit arrondies selon les règles mathématiques, c'est à dire que si la partie décimale est égale ou  supérieure à 0.5 on arrondit au-dessus, ce que ne fait pas la fonction int()
 - j'ai multiplié cette valeur par deux, pour augmenter la difficulté
 
 Si vous voulez en savoir plus sur les fonctions créés ainsi que sur le code en général, quelque notes ont été rédigées directement sur celui-ci.
