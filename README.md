@@ -1,6 +1,6 @@
 # Projet-Jeu-Python pour Parcoursup
 
-- Le but du jeu est simple :  vous devez empêcher les éclairs arrivant de tout les côtés d'atteindre le personnage (l'invocateur) situé au centre en les détruisant avec la sphère
+- Le but du jeu est simple :  vous devez empêcher les éclairs arrivant de tous les côtés d'atteindre le personnage (l'invocateur) situé au centre en les détruisant avec la sphère
 - Vous pouvez contrôler la sphère en tant que joueur avec les touches Z,Q,S,D (haut, gauche, bas, droite)
 
 Attention à ne pas entrer en collison avec le personnage ou ce sera une fin de partie !
