@@ -1,4 +1,4 @@
-# Projet-Jeu-Python pour Parcoursup
+# Projet-Jeu-Python 
 
 - Le but du jeu est simple :  vous devez empêcher les éclairs arrivant de tous les côtés d'atteindre le personnage (l'invocateur) situé au centre en les détruisant avec la sphère
 - Vous pouvez contrôler la sphère en tant que joueur avec les touches Z, Q, S, D (haut, gauche, bas, droite)
@@ -33,5 +33,4 @@ La fonction mouvement_projectile (l.95) permet de calculer le déplacement des r
 
 Si vous voulez en savoir plus sur les fonctions créés ainsi que sur le code en général, quelque notes ont été rédigées directement sur celui-ci.
 
-Merci beaucoup d’avoir lu jusqu’ici, en souhaitant que ma candidature retienne votre attention, j’espère être sélectionné pour intégrer votre établissement.
 
